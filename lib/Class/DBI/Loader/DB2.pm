@@ -7,7 +7,7 @@ require Class::DBI::Loader::Generic;
 use base qw(Class::DBI::Loader::Generic);
 use vars qw($VERSION);
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 sub _croak { require Carp; Carp::croak(@_); }
 sub _load_classes {
@@ -72,6 +72,10 @@ please see L<Class::DBI::Loader>
 =head1 AUTHOR
 
 Mark Ferris E<lt>mark.ferris@geac.comE<gt>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2004 Mark Ferris. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
