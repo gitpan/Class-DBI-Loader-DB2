@@ -7,7 +7,7 @@ require Class::DBI::Loader::Generic;
 use base qw(Class::DBI::Loader::Generic);
 use vars qw($VERSION);
 
-$VERSION = '0.12';
+$VERSION = '0.13';
 
 sub _croak { require Carp; Carp::croak(@_); }
 sub _load_classes {
