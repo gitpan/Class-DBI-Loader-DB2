@@ -1,3 +1,8 @@
+0.14  May 19, 2004
+
+- optimized table loading
+- used Class-DBI-DB2-0.16's set_up_table alias option
+
 0.13  May 16, 2004
 
 - corrected Makefile.PL

@@ -69,7 +69,11 @@ foreach my $dat (@dat) {
        password => $pass,
     );
     $tbl = uc($tbl);
-    is($loader->find_class($tbl), $tbl);
+    my $subclass = lc($tbl);
+    $subclass =~ s/_(\w)/ucfirst($1)/eg;
+    my $class = ucfirst($subclass);
+
+    is($loader->find_class($tbl), $class);
     my $class1 = $loader->find_class($tbl);
 
     $class1->create( $_ ) foreach ( @AoH );

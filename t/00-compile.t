@@ -6,7 +6,7 @@ BEGIN {
 
  SKIP: {
 	eval {
-	    require Class::DBI::mysql;
+	    require Class::DBI::DB2;
 	};
 	skip "Class::DBI::DB2 not found", 1 if $@;
 	use_ok 'Class::DBI::Loader::DB2';
